@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Temel SEO Meta Etiketleri -->
+  <title>Sümeyye Şimşek | Bilgisayar Mühendisi &amp; Yazılım Geliştirici</title>
+  <meta name="description" content="Bilgisayar Mühendisi Sümeyye Şimşek'in kurumsal yazılım geliştirme, veri analizi, mobil uygulama/API mimarileri ve IoT projelerini içeren portfolyo ve özgeçmiş sayfası." />
+  <meta name="keywords" content="Sümeyye Şimşek, Simsek42, Bilgisayar Mühendisi, Yazılım Geliştirici, Python, FastAPI, Flutter, Veri Analizi, Deneyap Mentörü, Portfolyo" />
+  <meta name="author" content="Sümeyye Şimşek" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://Simsek42.github.io/" />
+
+  <!-- Open Graph / Sosyal Medya Paylaşım Etiketleri -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sümeyye Şimşek | Bilgisayar Mühendisi &amp; Yazılım Geliştirici" />
+  <meta property="og:description" content="Python, FastAPI, Flutter ve IoT alanlarında geliştirdiğim yazılım projeleri, deneyimlerim ve teknik yetkinliklerim." />
+  <meta property="og:url" content="https://Simsek42.github.io/" />
+  <meta property="og:locale" content="tr_TR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sümeyye Şimşek | Bilgisayar Mühendisi &amp; Yazılım Geliştirici" />
+  <meta name="twitter:description" content="Yazılım geliştirme, veri analizi ve IoT projeleri portfolyosu." />
+
+  <!-- Yapısal Veri (JSON-LD Schema.org - Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sümeyye Şimşek",
+    "jobTitle": "Bilgisayar Mühendisi & Yazılım Geliştirici",
+    "url": "https://Simsek42.github.io/",
+    "email": "mailto:sumeyyesimsek118@gmail.com",
+    "sameAs": [
+      "https://github.com/Simsek42",
+      "https://www.linkedin.com/in/s%C3%BCmeyye-%C5%9Fim%C5%9Fek-836a33383"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Konya",
+      "addressCountry": "TR"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Mehmet Akif Ersoy Üniversitesi"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Deneyap Teknoloji Atölyeleri"
+    },
+    "knowsAbout": [
+      "Python",
+      "FastAPI",
+      "Flutter",
+      "Veri Analizi",
+      "REST API",
+      "IoT",
+      "Java",
+      "MySQL"
+    ]
+  }
+  </script>
+
+  <!-- Modern Kurumsal Font (Inter & JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8fafc;
+      --bg-card: #ffffff;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --accent: #1d4ed8;
+      --accent-hover: #1e40af;
+      --accent-soft: #eff6ff;
+      --border: #e2e8f0;
+      --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+      --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --nav-bg: rgba(255, 255, 255, 0.88);
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #0b1120;
+      --bg-secondary: #111827;
+      --bg-card: #1e293b;
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --accent: #3b82f6;
+      --accent-hover: #60a5fa;
+      --accent-soft: rgba(59, 130, 246, 0.14);
+      --border: #334155;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.45);
+      --nav-bg: rgba(11, 17, 32, 0.88);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.65;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Sabit Kurumsal Üst Menü */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--nav-bg);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .brand-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.75rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--accent);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .theme-toggle {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      transition: border-color 0.2s ease, transform 0.15s ease;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--accent);
+    }
+
+    /* Hero Bölümü */
+    .hero {
+      padding: 5.5rem 0 4.5rem;
+      border-bottom: 1px solid var(--border);
+      background: radial-gradient(circle at 85% 15%, var(--accent-soft), transparent 45%);
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.1rem, 4.5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+      max-width: 780px;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      max-width: 660px;
+      margin-bottom: 2rem;
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-bottom: 2.75rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.4rem;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #ffffff;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: var(--bg-card);
+      color: var(--text-primary);
+      border-color: var(--border);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.25rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .metric-item strong {
+      display: block;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .metric-item span {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Genel Bölüm Stilleri */
+    section {
+      padding: 4.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    .section-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .section-desc {
+      color: var(--text-secondary);
+      max-width: 620px;
+      margin-top: 0.5rem;
+      font-size: 0.98rem;
+    }
+
+    /* Hakkımda & Odak Alanları */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
+
+    .focus-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+    }
+
+    .focus-card h3 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .focus-list {
+      list-style: none;
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .focus-list li {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+    }
+
+    .focus-list li::before {
+      content: "✓";
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* Teknik Yetkinlikler Matrisi */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .skill-group {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .skill-group h3 {
+      font-size: 0.98rem;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      padding: 0.3rem 0.65rem;
+      border-radius: 6px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+    }
+
+    /* Proje Filtreleri ve Kartları */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .filter-btn {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      padding: 0.45rem 0.95rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent);
+    }
+
+    .project-card.hidden {
+      display: none;
+    }
+
+    .project-type {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .project-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .project-card p {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.25rem;
+    }
+
+    .project-footer {
+      margin-top: auto;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Deneyim ve Eğitim Zaman Çizelgesi */
+    .timeline {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .timeline-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 1.75rem;
+      position: relative;
+    }
+
+    .timeline-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-role {
+      font-size: 1.08rem;
+      font-weight: 700;
+    }
+
+    .timeline-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+    }
+
+    .timeline-org {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+    }
+
+    .timeline-desc {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+    }
+
+    /* İletişim Kartı */
+    .contact-box {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .contact-box h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-box p {
+      color: var(--text-secondary);
+      max-width: 520px;
+      font-size: 0.95rem;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    /* Alt Bilgi */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 0;
+      color: var(--text-muted);
+      font-size: 0.86rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero {
+        padding: 3.75rem 0 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Üst Navigasyon -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="Ana Sayfa">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Sümeyye Şimşek</span>
+      </a>
+
+      <nav aria-label="Ana Menü">
+        <ul class="nav-links">
+          <li><a href="#hakkimda">Hakkımda</a></li>
+          <li><a href="#yetenekler">Yetkinlikler</a></li>
+          <li><a href="#projeler">Projeler</a></li>
+          <li><a href="#deneyim">Deneyim &amp; Eğitim</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Tema Değiştir" title="Koyu / Açık Tema">
+          🌙
+        </button>
+        <a href="#iletisim" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">İletişime Geç</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Bölümü -->
+    <section class="hero">
+      <div class="container">
+        <span class="hero-badge">Bilgisayar Mühendisliği • Yazılım &amp; Veri Sistemleri</span>
+        <h1>Ölçeklenebilir yazılım mimarileri, veri çözümleri ve gömülü prototipler geliştiriyorum.</h1>
+        <p>
+          Merhaba, ben <strong>Sümeyye Şimşek</strong>. Python tabanlı backend sistemleri, mobil uygulama entegrasyonları,
+          veri analizi ve IoT çözümleri üzerine çalışan; aynı zamanda Deneyap Teknoloji Atölyeleri'nde mentörlük yapan bir geliştiriciyim.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projeler" class="btn btn-primary">Projeleri İncele</a>
+          <a href="https://github.com/Simsek42" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub Profili</a>
+          <a href="https://www.linkedin.com/in/s%C3%BCmeyye-%C5%9Fim%C5%9Fek-836a33383" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn</a>
+        </div>
+
+        <div class="hero-metrics" aria-label="Özet Bilgiler">
+          <div class="metric-item">
+            <strong>Full-Stack &amp; API</strong>
+            <span>FastAPI, Flutter &amp; İlişkisel Veritabanları</span>
+          </div>
+          <div class="metric-item">
+            <strong>Veri &amp; Yapay Zeka</strong>
+            <span>Python, NumPy, Pandas &amp; Makine Öğrenmesi</span>
+          </div>
+          <div class="metric-item">
+            <strong>Deneyap Mentörü</strong>
+            <span>Nisan 2025'ten beri aktif proje rehberliği</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hakkımda Bölümü -->
+    <section id="hakkimda">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">01 / Profil</span>
+          <h2 class="section-title">Hakkımda</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Bilgisayar Mühendisliği eğitimim süresince problem çözme odaklı yazılım geliştirme, RESTful servis mimarileri,
+              veri analizi ve ağ/sistem güvenliği alanlarında uygulamalı projeler geliştirdim. Teorik bilgiyi sahada çalışan,
+              ölçülebilir yazılım ve donanım prototiplerine dönüştürmeye odaklanıyorum.
+            </p>
+            <p>
+              Nisan 2025 itibarıyla <strong>Deneyap Teknoloji Atölyeleri</strong> bünyesinde mentör olarak görev alarak
+              öğrencilerin algoritma geliştirme, kodlama ve takım tabanlı proje üretme süreçlerine rehberlik ediyorum.
+            </p>
+          </div>
+
+          <aside class="focus-card" aria-label="Temel Odak Alanları">
+            <h3>Çalışma Prensiplerim &amp; Odak Alanlarım</h3>
+            <ul class="focus-list">
+              <li>Temiz, modüler ve sürdürülebilir API/backend mimarisi</li>
+              <li>Veri odaklı karar destek ve analitik görselleştirme</li>
+              <li>Sensör ve mikrodenetleyici tabanlı IoT prototipleme</li>
+              <li>Teknik dokümantasyon ve takım içi bilgi paylaşımı</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teknik Yetkinlikler -->
+    <section id="yetenekler">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">02 / Teknoloji Yığını</span>
+          <h2 class="section-title">Teknik Yetkinlikler</h2>
+          <p class="section-desc">Projelerimde ve akademik/saha çalışmalarımda aktif olarak kullandığım diller, çerçeveler ve araçlar.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-group">
+            <h3>Programlama Dilleri</h3>
+            <div class="tag-cloud">
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">Dart</span>
+              <span class="tag">PHP</span>
+              <span class="tag">C / C++</span>
+              <span class="tag">SQL</span>
+            </div>
+          </article>
+
+          <article class="skill-group">
+            <h3>Backend, Mobil &amp; Web</h3>
+            <div class="tag-cloud">
+              <span class="tag">FastAPI</span>
+              <span class="tag">Flutter</span>
+              <span class="tag">RESTful API</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">HTML5 / CSS3</span>
+              <span class="tag">OOP</span>
+            </div>
+          </article>
+
+          <article class="skill-group">
+            <h3>Veri Bilimi &amp; Yapay Zeka</h3>
+            <div class="tag-cloud">
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Makine Öğrenmesi</span>
+              <span class="tag">Veri Görselleştirme</span>
+              <span class="tag">Bulanık Mantık</span>
+            </div>
+          </article>
+
+          <article class="skill-group">
+            <h3>IoT, Sistem &amp; Araçlar</h3>
+            <div class="tag-cloud">
+              <span class="tag">Deneyap Kart</span>
+              <span class="tag">Arduino</span>
+              <span class="tag">Git &amp; GitHub</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Wireshark</span>
+              <span class="tag">VS Code / Android Studio</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projeler Bölümü -->
+    <section id="projeler">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">03 / Seçilmiş Çalışmalar</span>
+          <h2 class="section-title">Projeler</h2>
+          <p class="section-desc">Yazılım mühendisliği, mobil/backend entegrasyonu ve gömülü sistemler kapsamında geliştirdiğim öne çıkan projeler.</p>
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Proje Kategorileri">
+          <button class="filter-btn active" data-filter="all" type="button">Tümü</button>
+          <button class="filter-btn" data-filter="software" type="button">Yazılım &amp; Mobil</button>
+          <button class="filter-btn" data-filter="iot" type="button">IoT &amp; Donanım</button>
+          <button class="filter-btn" data-filter="data" type="button">Veri &amp; Analitik</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Proje 1 -->
+          <article class="project-card" data-category="software data">
+            <div>
+              <span class="project-type">Mobil Uygulama &amp; Özel API Mimarisi</span>
+              <h3>Mobil ERP Çiftlik Yönetim Uygulaması</h3>
+              <p>
+                Büyükbaş hayvancılık işletmeleri için hayvan kategorizasyonu (İnek, Düve, Tosun, Dana, Buzağı),
+                küpe numarası ile hızlı sorgulama, detay kartları ve grafik tabanlı sürü analitiği sunan uçtan uca yazılım çözümü.
+              </p>
+            </div>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Python</span>
+                <span class="tag">REST API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Simsek42" target="_blank" rel="noopener noreferrer">Kaynak Kodu &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proje 2 -->
+          <article class="project-card" data-category="iot data">
+            <div>
+              <span class="project-type">Gömülü Sistemler &amp; Çevresel İzleme</span>
+              <h3>Taşınabilir IoT Hava Kalitesi Haritalama Sistemi</h3>
+              <p>
+                CO₂, NH₃ ve partikül madde sensörlerinden toplanan çevresel verileri GPS konum bilgisiyle eşleştirerek
+                bölgesel hava kirliliği yoğunluğunu harita üzerinde izlemeye olanak tanıyan taşınabilir IoT prototipi.
+              </p>
+            </div>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag">Deneyap Kart</span>
+                <span class="tag">C++</span>
+                <span class="tag">GPS &amp; Sensörler</span>
+                <span class="tag">IoT</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Simsek42" target="_blank" rel="noopener noreferrer">Proje Detayı &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proje 3 -->
+          <article class="project-card" data-category="data software">
+            <div>
+              <span class="project-type">Veri İşleme &amp; Algoritma</span>
+              <h3>Python Veri Analizi ve Otomasyon Araçları</h3>
+              <p>
+                Ham veri setlerinin temizlenmesi, istatistiksel özetlenmesi ve API tabanlı servislerle entegre edilmesi
+                amacıyla geliştirilen modüler Python betikleri ve veri işleme iş akışları.
+              </p>
+            </div>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">NumPy</span>
+                <span class="tag">Git</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Simsek42" target="_blank" rel="noopener noreferrer">Repoları Gör &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deneyim ve Eğitim -->
+    <section id="deneyim">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">04 / Kariyer &amp; Akademik Geçmiş</span>
+          <h2 class="section-title">Deneyim ve Eğitim</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Deneyap Mentörü</h3>
+              <span class="timeline-date">Nisan 2025 – Günümüz</span>
+            </div>
+            <div class="timeline-org">Deneyap Teknoloji Atölyeleri • Konya, Türkiye</div>
+            <p class="timeline-desc">
+              Öğrencilere algoritma tasarımı, kodlama ve proje geliştirme süreçlerinde birebir mentörlük sağlama;
+              takım çalışmalarını koordine ederek fikir aşamasından prototip aşamasına kadar teknik rehberlik yürütme.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Bilgisayar Mühendisliği (Lisans)</h3>
+              <span class="timeline-date">Mezuniyet Aşaması</span>
+            </div>
+            <div class="timeline-org">Mehmet Akif Ersoy Üniversitesi</div>
+            <p class="timeline-desc">
+              Yazılım mühendisliği, nesne yönelimli programlama, veritabanı yönetim sistemleri, veri analizi,
+              makine öğrenmesi, ağ paket analizi ve dijital adli bilişim alanlarında kapsamlı akademik ve uygulamalı eğitim.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="iletisim">
+      <div class="container">
+        <div class="contact-box">
+          <div>
+            <h2>Birlikte Çalışalım</h2>
+            <p>
+              Yazılım geliştirme, veri analizi veya teknoloji projeleri kapsamındaki iş birliği ve pozisyon fırsatları
+              için <strong>sumeyyesimsek118@gmail.com</strong> üzerinden benimle doğrudan iletişime geçebilirsiniz.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a href="mailto:sumeyyesimsek118@gmail.com" class="btn btn-primary">E-posta Gönder</a>
+            <a href="https://www.linkedin.com/in/s%C3%BCmeyye-%C5%9Fim%C5%9Fek-836a33383" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn</a>
+            <a href="https://github.com/Simsek42" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Alt Bilgi -->
+  <footer>
+    <div class="container footer-inner">
+      <span>&copy; 2026 Sümeyye Şimşek. Tüm hakları saklıdır.</span>
+      <span>Konya, Türkiye</span>
+    </div>
+  </footer>
+
+  <!-- Tema Değiştirme ve Proje Filtreleme Betiği -->
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const toggleBtn = document.getElementById('themeToggle');
+      const savedTheme = localStorage.getItem('portfolio-theme');
+
+      if (savedTheme) {
+        root.setAttribute('data-theme', savedTheme);
+        toggleBtn.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+      }
+
+      toggleBtn.addEventListener('click', function () {
+        const current = root.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('portfolio-theme', next);
+        toggleBtn.textContent = next === 'dark' ? '☀️' : '🌙';
+      });
+
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          filterButtons.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+
+          const filter = btn.getAttribute('data-filter');
+          projectCards.forEach(function (card) {
+            const categories = card.getAttribute('data-category') || '';
+            if (filter === 'all' || categories.includes(filter)) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

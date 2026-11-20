@@ -1,18 +1,14 @@
 <div align="center">
 
-  <!-- Üst Kurumsal Başlık Kartı -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:1d4ed8&height=180&section=header&text=S%C3%BCmeyye%20%C5%9Eim%C5%9Fek&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Bilgisayar%20M%C3%BChendisi%20%7C%20Yaz%C4%B1l%C4%B1m%20%26%20Veri%20Sistemleri%20%7C%20Deneyap%20Ment%C3%B6r%C3%BC&descAlignY=62&descSize=16" width="100%" alt="Sümeyye Şimşek Banner" />
+  <h1>Sümeyye Şimşek</h1>
+  <p><strong>Bilgisayar Mühendisi • Yazılım &amp; Veri Sistemleri • Deneyap Mentörü</strong></p>
+  <p>Ölçeklenebilir yazılım mimarileri, veri çözümleri ve gömülü IoT prototipleri geliştiriyorum.</p>
 
   <p>
-    <strong>Ölçeklenebilir yazılım mimarileri, veri çözümleri ve gömülü IoT prototipleri geliştiriyorum.</strong>
-  </p>
-
-  <!-- Hızlı İletişim ve Portfolyo Butonları -->
-  <p>
-    <a href="https://Simsek42.github.io/" target="_blank">
+    <a href="https://Simsek42.github.io/" target="_blank" rel="noopener noreferrer">
       <img src="https://img.shields.io/badge/Canl%C4%B1_Portfolyo-Simsek42.github.io-1d4ed8?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolyo Sitesi" />
     </a>
-    <a href="https://www.linkedin.com/in/s%C3%BCmeyye-%C5%9Fim%C5%9Fek-836a33383" target="_blank">
+    <a href="https://www.linkedin.com/in/s%C3%BCmeyye-%C5%9Fim%C5%9Fek-836a33383" target="_blank" rel="noopener noreferrer">
       <img src="https://img.shields.io/badge/LinkedIn-Ba%C4%9Flant%C4%B1_Kur-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
     <a href="mailto:sumeyyesimsek118@gmail.com">
@@ -41,7 +37,7 @@
       </p>
     </td>
     <td width="42%" valign="top">
-      <h4>🎯 Çalışma Prensipleri & Odak</h4>
+      <h4>🎯 Çalışma Prensipleri &amp; Odak</h4>
       <ul>
         <li>Temiz, modüler ve sürdürülebilir API/backend mimarisi</li>
         <li>Veri odaklı karar destek ve analitik görselleştirme</li>
@@ -70,7 +66,7 @@
       </p>
     </td>
     <td width="50%" valign="top">
-      <h4>🌐 Backend, Mobil & Web</h4>
+      <h4>🌐 Backend, Mobil &amp; Web</h4>
       <p>
         <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
         <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter" />
@@ -82,7 +78,7 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>📊 Veri Bilimi & Yapay Zeka</h4>
+      <h4>📊 Veri Bilimi &amp; Yapay Zeka</h4>
       <p>
         <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas" />
         <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy" />
@@ -91,7 +87,7 @@
       </p>
     </td>
     <td width="50%" valign="top">
-      <h4>⚙️ IoT, Sistem & Araçlar</h4>
+      <h4>⚙️ IoT, Sistem &amp; Araçlar</h4>
       <p>
         <img src="https://img.shields.io/badge/Deneyap_Kart-dc2626?style=flat-square" alt="Deneyap Kart" />
         <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white" alt="Arduino" />
@@ -110,13 +106,13 @@
 <table>
   <tr>
     <th width="28%" align="left">Proje</th>
-    <th width="48%" align="left">Kapsam & Mimari</th>
+    <th width="48%" align="left">Kapsam &amp; Mimari</th>
     <th width="24%" align="left">Teknolojiler</th>
   </tr>
   <tr>
     <td>
       <strong>Mobil ERP Çiftlik Yönetim Uygulaması</strong><br/>
-      <sub><i>Mobil Uygulama & Özel API</i></sub>
+      <sub><i>Mobil Uygulama &amp; Özel API</i></sub>
     </td>
     <td>
       Büyükbaş hayvancılık işletmeleri için hayvan kategorizasyonu (İnek, Düve, Tosun, Dana, Buzağı),
@@ -129,7 +125,7 @@
   <tr>
     <td>
       <strong>Taşınabilir IoT Hava Kalitesi Haritalama Sistemi</strong><br/>
-      <sub><i>Gömülü Sistemler & Çevresel İzleme</i></sub>
+      <sub><i>Gömülü Sistemler &amp; Çevresel İzleme</i></sub>
     </td>
     <td>
       CO₂, NH₃ ve partikül madde sensörlerinden toplanan çevresel verileri GPS konum bilgisiyle eşleştirerek
@@ -142,7 +138,7 @@
   <tr>
     <td>
       <strong>Python Veri Analizi ve Otomasyon Araçları</strong><br/>
-      <sub><i>Veri İşleme & Algoritma</i></sub>
+      <sub><i>Veri İşleme &amp; Algoritma</i></sub>
     </td>
     <td>
       Ham veri setlerinin temizlenmesi, istatistiksel özetlenmesi ve API tabanlı servislerle entegre edilmesi

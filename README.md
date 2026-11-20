@@ -1,5 +1,7 @@
 <div align="center">
 
+  <img src="https://media.licdn.com/dms/image/v2/D4D03AQGEmUUvYhY3Ng/profile-displayphoto-scale_400_400/B4DaH4xudEJ0Ag-/0/1795175149172?e=1796860800&v=beta&t=j4cjUED48msw8iawN-1U7WZ5tWmb5GROnsEJ0ZYmu24" width="132" height="132" alt="Sümeyye Şimşek" />
+
   <h1>Sümeyye Şimşek</h1>
   <p><strong>Bilgisayar Mühendisi • Yazılım &amp; Veri Sistemleri • Deneyap Mentörü</strong></p>
   <p>Ölçeklenebilir yazılım mimarileri, veri çözümleri ve gömülü IoT prototipleri geliştiriyorum.</p>
